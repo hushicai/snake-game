@@ -1,5 +1,8 @@
 # 命令行贪吃蛇游戏
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub release](https://img.shields.io/github/release/hushicai/snake-game.svg)](https://github.com/hushicai/snake-game/releases)
+
 一个在终端中运行的经典贪吃蛇游戏，使用 Node.js 和原生终端控制实现。
 
 ## 特性
@@ -11,7 +14,27 @@
 - 游戏速度随得分增加而加快
 - 游戏结束画面和重新开始功能
 
-## 安装和运行
+## 在线体验
+
+您可以通过 [GitHub Codespaces](https://github.com/features/codespaces) 在线体验这个游戏，无需本地安装。
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/hushicai/snake-game?quickstart=1)
+
+### 在线运行
+
+1. 点击上面的 "Open in GitHub Codespaces" 按钮
+2. 等待 Codespaces 环境初始化（通常需要1-2分钟）
+3. 在终端中运行以下命令启动游戏：
+
+```bash
+npm start
+```
+
+或者直接运行：
+
+```bash
+node src/index.js
+```
 
 ### 前提条件
 - Node.js v14 或更高版本
