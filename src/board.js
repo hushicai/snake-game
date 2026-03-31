@@ -15,17 +15,24 @@ class Board {
     
     // Draw snake
     snake.body.forEach((segment, index) => {
-      if (index === 0) {
-        // Head
-        board[segment.y][segment.x] = '●';
-      } else {
-        // Body
-        board[segment.y][segment.x] = '█';
+      // Check bounds before drawing
+      if (segment.x >= 0 && segment.x < boardWidth && 
+          segment.y >= 0 && segment.y < boardHeight) {
+        if (index === 0) {
+          // Head
+          board[segment.y][segment.x] = '●';
+        } else {
+          // Body
+          board[segment.y][segment.x] = '█';
+        }
       }
     });
     
-    // Draw food
-    board[food.y][food.x] = '★';
+    // Draw food (check bounds)
+    if (food.x >= 0 && food.x < boardWidth && 
+        food.y >= 0 && food.y < boardHeight) {
+      board[food.y][food.x] = '★';
+    }
     
     // Clear screen and render
     this.clearScreen();
